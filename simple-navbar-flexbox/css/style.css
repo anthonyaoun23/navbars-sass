@@ -1,0 +1,24 @@
+.navbar {
+  height: 56px;
+  width: 300px;
+  background: gray;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.navbar a {
+  color: ghostwhite;
+  text-decoration-line: none;
+  font-family: Helvetica;
+}
+
+a {
+  transition: all .3s ease;
+}
+a:hover {
+  transform: scale(1.01);
+}
+a:active {
+  transform: scale(0.98);
+}
