@@ -1,7 +1,13 @@
-.layout {
+$backgroundColor: rgb(255, 153, 0);
+
+@mixin dimensions {
   height: 100vh;
   width: 100vw;
+}
 
-  background: crimson;
+.layout {
+  @include dimensions;
+
+  background: $backgroundColor;
   font-size: 24px;
 }
