@@ -12,3 +12,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
+
+.layout {
+  display: grid;
+  grid-template-rows: [navbar-s] 56px [navbar-e image-s] 400px [image-e];
+  grid-template-columns: [s] 1fr [e]; }
+  .layout__navbar {
+    grid-row: navbar-s/navbar-e;
+    grid-column: s/e; }
+  .layout__image-container {
+    grid-row: image-s/image-e;
+    grid-column: s/e; }
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
