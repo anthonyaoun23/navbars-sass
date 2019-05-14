@@ -4,11 +4,13 @@
 @import "navbar";
 
 .actions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px;
     width: 400px;
     .action {
+        margin: 0px 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
