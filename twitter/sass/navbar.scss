@@ -1,3 +1,22 @@
+@mixin remove-default-button-styles() {
+  border: none;
+}
+@mixin blue-button() {
+  font-weight: bold;
+  background: $color-primary-darker;
+  @include remove-default-button-styles;
+
+  height: 32px;
+  width: 74px;
+  border-radius: 100px;
+  padding: 5px 16px;
+  padding-bottom: 6px;
+  border: 1px solid transparent;
+  // box-shadow: none;
+  box-sizing: border-box;
+  font-size: 14px;
+
+}
 
 .navbar {
     display: grid;
@@ -26,8 +45,10 @@
     }
     &__tweet {
       grid-column: tweet-s/tweet-e;
+      @include blue-button;
     }
   }
+
 
 
 .navbar {
