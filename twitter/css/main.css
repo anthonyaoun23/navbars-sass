@@ -10,7 +10,8 @@ body {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+  background: #10171E; }
 
 .layout {
   display: grid;
@@ -23,19 +24,15 @@ body {
     grid-row: image-s/image-e;
     grid-column: s/e; }
 
-.navbar {
-  background: #1c2938;
-  color: #96afb5; }
-  .navbar__logo {
-    color: #1DA1F2; }
-  .navbar__tweet {
-    background: #1DA1F2;
-    color: white; }
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
 
 .navbar {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: [actions-s] 300px [actions-e] 1fr [logo-s] 50px [logo-e] 1fr 50px [search-s] 100px [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e];
+  grid-template-columns: [actions-s] 1fr [actions-e] 300px [logo-s] 50px [logo-e] 1fr 50px [search-s] 100px [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e];
   justify-items: center;
   align-items: center; }
   .navbar__actions {
@@ -54,7 +51,25 @@ body {
   .navbar__tweet {
     grid-column: tweet-s/tweet-e; }
 
-.image-container img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover; }
+.navbar {
+  background: #1c2938;
+  color: #96afb5; }
+  .navbar__logo {
+    color: #1DA1F2; }
+  .navbar__tweet {
+    background: #1DA1F2;
+    color: white; }
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 400px; }
+  .actions .action {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto; }
+    .actions .action__icon {
+      margin: 0px 10px; }

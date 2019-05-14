@@ -1,5 +1,22 @@
-
-@import "base";
 @import "variables";
+@import "base";
 @import "layout";
 @import "navbar";
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 400px;
+    .action {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+
+        &__icon {
+            margin: 0px 10px;
+        }
+    }
+}
