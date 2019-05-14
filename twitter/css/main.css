@@ -85,12 +85,18 @@ body {
     grid-row: 1/-1;
     grid-column: 1/-1; }
   .search input {
-    padding: 4px;
     height: 30px;
     box-sizing: border-box;
-    border-radius: 15px; }
+    border-radius: 15px;
+    background: #1a232F;
+    border: #38444d;
+    color: white;
+    padding: 8px 32px 8px 12px; }
+    .search input::placeholder {
+      color: #96afb5; }
   .search i {
-    padding: 4px;
-    padding-right: 6px;
+    padding-top: 4px;
+    padding-right: 8px;
     line-height: 1.3;
-    justify-self: end; }
+    justify-self: end;
+    padding-right: 10px; }
