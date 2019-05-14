@@ -42,12 +42,18 @@ body {
   }
   &__logo {
     grid-column: logo-s/logo-e;
+    color: blue;
+    font-size: 20px;
   }
   &__search {
     grid-column: search-s/search-e;
   }
   &__profile {
     grid-column: profile-s/profile-e;
+    border-radius: 16px;
+    object-fit: cover;
+    height: 32px;
+    widows: 32px;
   }
   &__tweet {
     grid-column: tweet-s/tweet-e;

@@ -32,11 +32,17 @@ body {
   .navbar__actions {
     grid-column: actions-s/actions-e; }
   .navbar__logo {
-    grid-column: logo-s/logo-e; }
+    grid-column: logo-s/logo-e;
+    color: blue;
+    font-size: 20px; }
   .navbar__search {
     grid-column: search-s/search-e; }
   .navbar__profile {
-    grid-column: profile-s/profile-e; }
+    grid-column: profile-s/profile-e;
+    border-radius: 16px;
+    object-fit: cover;
+    height: 32px;
+    widows: 32px; }
   .navbar__tweet {
     grid-column: tweet-s/tweet-e; }
 
