@@ -26,7 +26,17 @@ body {
 .navbar {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: [actions-s] 1fr [actions-e logo-s] 50px [logo-e search-s] 100px [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e]; }
+  grid-template-columns: [actions-s] 300px [actions-e] 1fr [logo-s] 50px [logo-e search-s] 100px [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e]; }
+  .navbar__actions {
+    grid-column: actions-s/actions-e; }
+  .navbar__logo {
+    grid-column: logo-s/logo-e; }
+  .navbar__search {
+    grid-column: search-s/search-e; }
+  .navbar__profile {
+    grid-column: profile-s/profile-e; }
+  .navbar__tweet {
+    grid-column: tweet-s/tweet-e; }
 
 .image-container img {
   height: 100%;
