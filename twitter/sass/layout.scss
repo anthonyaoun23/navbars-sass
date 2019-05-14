@@ -1,0 +1,21 @@
+.layout {
+    display: grid;
+    grid-template-rows: [navbar-s] 56px [navbar-e image-s] 400px [image-e];
+    grid-template-columns: [s] 1fr [e];
+    &__navbar {
+      grid-row: navbar-s/navbar-e;
+      grid-column: s/e;
+    }
+    &__image-container {
+      grid-row: image-s/image-e;
+      grid-column: s/e;
+    }
+  }
+
+  .image-container {
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }

@@ -32,9 +32,6 @@ body {
     background: #1DA1F2;
     color: white; }
 
-body {
-  background: #10171E; }
-
 .navbar {
   display: grid;
   grid-template-rows: 1fr;
@@ -45,7 +42,6 @@ body {
     grid-column: actions-s/actions-e; }
   .navbar__logo {
     grid-column: logo-s/logo-e;
-    color: blue;
     font-size: 20px; }
   .navbar__search {
     grid-column: search-s/search-e; }

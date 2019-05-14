@@ -1,0 +1,44 @@
+
+.navbar {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: [actions-s] 300px [actions-e] 1fr [logo-s] 50px [logo-e] 1fr 50px [search-s] 100px [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e];
+  
+    justify-items: center;
+    align-items: center;
+    &__actions {
+      grid-column: actions-s/actions-e;
+    }
+    &__logo {
+      grid-column: logo-s/logo-e;
+      font-size: 20px;
+    }
+    &__search {
+      grid-column: search-s/search-e;
+    }
+    &__profile {
+      grid-column: profile-s/profile-e;
+      border-radius: 16px;
+      object-fit: cover;
+      height: 32px;
+      widows: 32px;
+    }
+    &__tweet {
+      grid-column: tweet-s/tweet-e;
+    }
+  
+  }
+
+
+.navbar {
+    background: $color-secondary;
+    color: $color-text;
+  
+    &__logo {
+      color: $color-primary;
+    }
+    &__tweet {
+      background: $color-primary;
+      color: white;
+    }
+  }
