@@ -32,7 +32,7 @@ body {
 .navbar {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: [actions-s] 1fr [actions-e] 300px [logo-s] 50px [logo-e] 1fr 50px [search-s] 100px [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e];
+  grid-template-columns: [actions-s] 1fr [actions-e] 300px [logo-s] 50px [logo-e] 150px [search-s] 1fr [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e];
   justify-items: center;
   align-items: center; }
   .navbar__actions {
@@ -41,6 +41,7 @@ body {
     grid-column: logo-s/logo-e;
     font-size: 20px; }
   .navbar__search {
+    justify-self: end;
     grid-column: search-s/search-e; }
   .navbar__profile {
     grid-column: profile-s/profile-e;
@@ -75,3 +76,21 @@ body {
     width: auto; }
     .actions .action__icon {
       margin: 0px 10px; }
+
+.search {
+  margin-right: 30px;
+  display: grid; }
+  .search input,
+  .search i {
+    grid-row: 1/-1;
+    grid-column: 1/-1; }
+  .search input {
+    padding: 4px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 15px; }
+  .search i {
+    padding: 4px;
+    padding-right: 6px;
+    line-height: 1.3;
+    justify-self: end; }

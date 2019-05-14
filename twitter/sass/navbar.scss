@@ -2,7 +2,7 @@
 .navbar {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: [actions-s] 1fr [actions-e] 300px [logo-s] 50px [logo-e] 1fr 50px [search-s] 100px [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e];
+    grid-template-columns: [actions-s] 1fr [actions-e] 300px [logo-s] 50px [logo-e] 150px [search-s] 1fr [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e];
   
     justify-items: center;
     align-items: center;
@@ -14,6 +14,7 @@
       font-size: 20px;
     }
     &__search {
+      justify-self: end;
       grid-column: search-s/search-e;
     }
     &__profile {
@@ -26,7 +27,6 @@
     &__tweet {
       grid-column: tweet-s/tweet-e;
     }
-  
   }
 
 
