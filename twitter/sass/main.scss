@@ -30,6 +30,28 @@ body {
   }
 }
 
+$color-primary: #1DA1F2;
+$color-text: #96afb5;
+$color-secondary: #1c2938;
+$color-bg: #10171E;
+
+.navbar {
+  background: $color-secondary;
+  color: $color-text;
+
+  &__logo {
+    color: $color-primary;
+  }
+  &__tweet {
+    background: $color-primary;
+    color: white;
+  }
+}
+
+body {
+  background: $color-bg;
+}
+
 .navbar {
   display: grid;
   grid-template-rows: 1fr;
