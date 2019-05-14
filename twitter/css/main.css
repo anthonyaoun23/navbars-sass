@@ -26,7 +26,9 @@ body {
 .navbar {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: [actions-s] 300px [actions-e] 1fr [logo-s] 50px [logo-e search-s] 100px [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e]; }
+  grid-template-columns: [actions-s] 300px [actions-e] 1fr [logo-s] 50px [logo-e] 1fr 50px [search-s] 100px [search-e profile-s] 50px [profile-e tweet-s] 100px [tweet-e];
+  justify-items: center;
+  align-items: center; }
   .navbar__actions {
     grid-column: actions-s/actions-e; }
   .navbar__logo {
